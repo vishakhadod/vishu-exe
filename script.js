@@ -271,7 +271,7 @@ function execute(cmd) {
                 "clear        → Clear screen\n" +
                 "date         → Show time\n" +
                 "secret       → Hidden message\n" +
-                "scan         → Fake IP scan\n" +
+                "ipscan         → Fake IP scan\n" +
                 "game         → Hacker attack game\n" +
                 "sysinfo      → System information\n" +
                 "trace        → Trace route simulation\n" +
@@ -338,7 +338,7 @@ function execute(cmd) {
             setTimeout(() => print("✔ Secret Unlocked: Vishu is OP hacker 😎🔥"), 1500);
             break;
 
-        case "scan":
+        case "ipscan":
             fakeScan();
             break;
 
@@ -485,4 +485,5 @@ function shutdownTerminal() {
         output.innerHTML = "";
         print("System rebooted. Type 'help'.");
     }, 2500);
+
 }
